@@ -630,8 +630,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: none;
 	color: #f38181;
 	font-size: 30px;
-	transition: color .2s linear;
-	transition: background-color .2s linear;
+	transition: background-color, color .2s linear;
 }
 
 .social__item:last-child {
@@ -641,8 +640,7 @@ h1, h2, h3, h4, h5, h6 {
 .social__item:hover {
 	background-color: #f38181;
 	color: #fff;
-	transition: color .2s linear;
-	transition: background-color .2s linear;
+	transition: background-color, color .2s linear;
 }
 
 .logos {
@@ -752,7 +750,6 @@ h1, h2, h3, h4, h5, h6 {
 	position: absolute;
 	top: 0;
 	left: 40px;
-	position: absolute;
 	z-index: 1;
 }
 
@@ -1066,7 +1063,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .instagram__item {
 	width: 31.33333%;
-	font: 1 1 0;
+	flex: 1 1 0;
 }
 
 .instagram__item img {
@@ -1307,5 +1304,13 @@ h1, h2, h3, h4, h5, h6 {
 
 	.work__col {
 		width: 100%;
+	}
+
+	.clients__item {
+		text-align: center;
+	}
+
+	.clients__text:before {
+		margin: 15px auto;
 	}
 }
