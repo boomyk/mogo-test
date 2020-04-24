@@ -34,7 +34,9 @@ h1, h2, h3, h4, h5, h6 {
 	background-size: cover;
 	height: 100vh;
 }
-
+.page {
+	overflow: hidden;
+}
 .intro__title {
 	text-transform: uppercase;
 	font-size: 100px;
@@ -93,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 30px;
 	font-weight: 700;
 	color: #fff;
+	padding-left: 20px;
 }
 
 .nav {
@@ -274,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card__item {
 	width: 33.33333%;
-	padding-left: 30px;
+	padding: 0 30px;
 }
 .card__inner {
 	position: relative;
@@ -791,6 +794,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -922,7 +926,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer__inner {
 	padding-bottom: 65px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .footer__col--first {
@@ -1088,7 +1092,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 13px;
 	font-weight: 300;
 	font-family: 'Roboto', sans-serif;
-	
+	width: 100%;
 
 }
 
@@ -1171,6 +1175,30 @@ h1, h2, h3, h4, h5, h6 {
 	.reviews__text {
 		font-size: 15px;
 	}
+
+	.footer__inner {
+		flex-wrap: wrap;
+	}
+	.footer__col--first {
+		width: 100%;
+		padding: 0 15px;
+	}
+	.footer__col--second {
+		width: 50%;
+	}
+	.footer__col--third {
+		width: 50%;
+	}
+
+	.instagram {
+		justify-content: flex-start;
+	}
+
+	.instagram__item {
+		flex: none;
+		max-width: 100%;
+		width: auto;
+	}
 	
 }
 
@@ -1235,6 +1263,19 @@ h1, h2, h3, h4, h5, h6 {
 		position: static;
 	}
 
+	.blog__item {
+		width: 100%;
+		max-width: 380px;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+	.footer__col--second {
+		width: 100%;
+	}
+	.footer__col--third {
+		width: 100%;
+	}
+
 
 }
 
@@ -1297,6 +1338,10 @@ h1, h2, h3, h4, h5, h6 {
 		top: 13%;
 	}
 
+	.slider__item {
+		font-size: 12px;
+	}
+
 	.logos {
 		justify-content: space-around;
 	    flex-wrap: wrap;
@@ -1312,5 +1357,27 @@ h1, h2, h3, h4, h5, h6 {
 
 	.clients__text:before {
 		margin: 15px auto;
+	}
+
+	.footer__col--third {
+		width: 100%;
+		text-align: center;
+	}
+
+	.instagram {
+		justify-content: center;
+	}
+	.copyright {
+		font-size: 11px;
+	}
+	.blogs__title {
+		font-size: 10px;
+	}
+	.footer__input {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.footer__btn {
+		width: 100%;
 	}
 }
