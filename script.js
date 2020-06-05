@@ -8,9 +8,9 @@ $(function () {
         scrollOffset = $(this).scrollTop();
 
         if ( scrollOffset >= introH) {
-            header.addClass('fixed');
+            header.addClass('header--fixed');
         }else {
-            header.removeClass('fixed');
+            header.removeClass('header--fixed');
         }
 
     });
